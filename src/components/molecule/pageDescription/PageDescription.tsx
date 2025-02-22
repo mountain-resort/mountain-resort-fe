@@ -19,7 +19,7 @@ const PageDescription = ({
       {compo ? (
         compo
       ) : (
-        <div className='px-[16px] py-[40px] flex flex-col gap-[40px]'>
+        <div className='px-4 py-10 flex flex-col gap-10'>
           {title && <TextBox text={title} />}
           <div className='flex flex-col gap-[17px] font-sans'>
             {subTitle && <TextBox text={subTitle} size='text-xs'/>}
@@ -30,5 +30,6 @@ const PageDescription = ({
     </div>
   );
 };
+
 
 export default PageDescription;
