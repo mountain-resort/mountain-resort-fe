@@ -30,6 +30,7 @@ export default {
         md: ["24px", { lineHeight: "30.7px" }],
         sm: ["18px", { lineHeight: "23px" }],
         xs: ["16px", { lineHeight: "20px" }],
+        "2xs": ["14px", { lineHeight: "19.1px" }],
       },
       fontWeight: {
         bold: "700",
