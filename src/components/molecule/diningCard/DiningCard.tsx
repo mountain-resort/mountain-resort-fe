@@ -25,11 +25,11 @@ const gapVariants = cva(flexCol(), {
     },
   },
 });
-const borderVariants = cva('border border-solid', {
+const borderVariants = cva('border-solid', {
   variants: {
     border: {
-      gold: 'w-[51px] border-primary-gold',
-      gray: 'w-[234px] border-[0.5px] border-transparent border-t-primary-gray/50',
+      gold: 'w-[51px] border border-primary-gold',
+      gray: 'w-[234px] border-t-[0.5px] border-t-primary-gray/50',
     },
   },
 });
@@ -79,14 +79,14 @@ const DiningCard = ({
                 text={title}
                 weight='font-semibold'
                 size='text-sm'
-                etc='font-lora'
+                otherStyle='font-lora'
               />
             )}
             {subTitle && (
               <TextBox
                 text={subTitle}
                 size='text-3xs'
-                etc='text-primary-gray'
+                otherStyle='text-primary-gray'
               />
             )}
           </div>
