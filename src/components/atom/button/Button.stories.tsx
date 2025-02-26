@@ -22,8 +22,6 @@ const meta: Meta<typeof Button> = {
       control: { type: 'select' },
       options: ['none', 'sm', 'md', 'lg', 'xl', 'full'],
     },
-    height: { control: 'text' },
-    fontSize: { control: 'text' },
     iconPosition: {
       control: { type: 'select' },
       options: ['left', 'right'],
@@ -94,6 +92,5 @@ export const Gray: Story = {
     children: 'Log in',
     variant: 'gray',
     rounded: 'md',
-    height: 'h-[35px]',
   },
 };

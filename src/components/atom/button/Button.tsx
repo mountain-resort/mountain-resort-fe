@@ -48,8 +48,6 @@ export default function Button({
   children,
   variant,
   rounded,
-  height = 'h-[43px]',
-  fontSize = 'text-xs',
   iconSrc,
   iconSize = 14,
   iconPosition = 'left',
@@ -58,12 +56,7 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={cn(
-        buttonVariants({ variant, rounded }),
-        height,
-        fontSize,
-        className,
-      )}
+      className={cn(buttonVariants({ variant, rounded }), className)}
       {...props}
     >
       {iconSrc && iconPosition === 'left' && (
