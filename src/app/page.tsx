@@ -27,9 +27,9 @@ export default function Home() {
         <ReviewCard
           pageType={PageType.DETAIL}
           title='Heavenly Culinary Delights'
-          star={3}
+          star={0}
           content='As a self-proclaimed food enthusiast, I was blown away by the culinary offerings at Mountains Resort. Every meal was a celebration of flavors, showcasing the best of Australian ingredients. The chef-hatted restaurant lived up to its reputation, offering a dining experience that was a true highlight of our stay. This resort is a haven for food lovers!'
-          writer='Mark & Emily'
+          reviewer='Mark & Emily'
         />
       </div>
 

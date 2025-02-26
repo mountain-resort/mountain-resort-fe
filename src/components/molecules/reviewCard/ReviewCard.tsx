@@ -12,7 +12,7 @@ interface DescriptionType {
   title: string;
   star: number;
   content: string;
-  writer: string;
+  reviewer: string;
 }
 
 const ReviewCard = ({
@@ -20,7 +20,7 @@ const ReviewCard = ({
   title,
   star,
   content,
-  writer,
+  reviewer,
 }: DescriptionType) => {
   return (
     <div className='w-full h-full'>
@@ -35,7 +35,7 @@ const ReviewCard = ({
           {title && (
             <TextBox text={`"${title}"`} size='mobile:text-2xs pc:text-sm' />
           )}
-          {star && <StarRating starNumber={star} />}
+          {star >= 0 && <StarRating starNumber={star} />}
           {content && (
             <TextBox
               text={`"${content}"`}
@@ -43,9 +43,9 @@ const ReviewCard = ({
               otherStyle='font-sans'
             />
           )}
-          {writer && (
+          {reviewer && (
             <TextBox
-              text={`by ${writer}`}
+              text={`by ${reviewer}`}
               size='mobile:text-xs pc:text-sm'
               weight='font-bold'
               otherStyle='font-sans'
