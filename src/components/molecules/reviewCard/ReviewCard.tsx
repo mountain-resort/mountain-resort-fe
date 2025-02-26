@@ -2,13 +2,13 @@ import TextBox from '@/components/atoms/TextBox';
 import React from 'react';
 import StarRating from './StarRating';
 
-export enum PageType {
-  LANDING = 'landing',
+export enum Type {
+  PREVIEW = 'preview',
   DETAIL = 'detail',
 }
 
-interface DescriptionType {
-  pageType: PageType;
+interface Props {
+  type: Type;
   title: string;
   star: number;
   content: string;
@@ -16,41 +16,33 @@ interface DescriptionType {
 }
 
 const ReviewCard = ({
-  pageType,
+  type = Type.PREVIEW,
   title,
   star,
   content,
   reviewer,
-}: DescriptionType) => {
+}: Props) => {
   return (
     <div className='w-full h-full'>
       <div
         className={`rounded-md ${
-          pageType === 'landing'
-            ? 'bg-white bg-opacity-10 '
-            : 'bg-primary-black'
+          type === Type.PREVIEW ? 'bg-white/10' : 'bg-primary-black'
         }`}
       >
         <div className='px-8 py-6 flex flex-col gap-6 items-center text-center font-Lara'>
-          {title && (
-            <TextBox text={`"${title}"`} size='mobile:text-2xs pc:text-sm' />
-          )}
-          {star >= 0 && <StarRating starNumber={star} />}
-          {content && (
-            <TextBox
-              text={`"${content}"`}
-              size='mobile:text-3xs pc:text-sm'
-              otherStyle='font-sans'
-            />
-          )}
-          {reviewer && (
-            <TextBox
-              text={`by ${reviewer}`}
-              size='mobile:text-xs pc:text-sm'
-              weight='font-bold'
-              otherStyle='font-sans'
-            />
-          )}
+          <TextBox text={`"${title}"`} size='text-2xs pc:text-sm' />
+          <StarRating starNumber={star} />
+          <TextBox
+            text={`"${content}"`}
+            size='text-3xs pc:text-sm'
+            otherStyle='font-sans'
+          />
+          <TextBox
+            text={`by ${reviewer}`}
+            size='text-xs pc:text-sm'
+            weight='font-bold'
+            otherStyle='font-sans'
+          />
         </div>
       </div>
     </div>

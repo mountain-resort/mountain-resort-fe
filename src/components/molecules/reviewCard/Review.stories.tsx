@@ -1,13 +1,13 @@
 import React from 'react';
 import type { Meta, StoryFn } from '@storybook/react';
-import ReviewCard, { PageType } from './ReviewCard';
+import ReviewCard, { Type } from './ReviewCard';
 
 export default {
   title: 'Components/ReviewCard',
   component: ReviewCard,
   argTypes: {
     pageType: {
-      options: Object.values(PageType),
+      options: Object.values(Type),
       control: { type: 'radio' },
     },
     title: { control: 'text' },

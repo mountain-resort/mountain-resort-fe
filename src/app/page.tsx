@@ -1,7 +1,4 @@
-// import PageDescription from '@/components/atom/pageDescription/PageDescription';
-import ReviewCard, {
-  PageType,
-} from '@/components/molecules/reviewCard/ReviewCard';
+import PageDescription from '@/components/molecules/pageDescription/PageDescription';
 
 export default function Home() {
   return (
@@ -11,7 +8,7 @@ export default function Home() {
     // fontWeight - bold: 700, semibold: 600, medium: 500, regular: 400
     // screens - mobile: 375px, pc: 1440px
     <div className='bg-primary-black'>
-      <div className=' p-10'>
+      <div className='p-10'>
         <h1 className='text-xl font-bold text-primary-black font-lora pc:text-sm'>
           This is Landing page
         </h1>
@@ -19,17 +16,10 @@ export default function Home() {
           This is Landing page
         </h1>
 
-        {/* <PageDescription
+        <PageDescription
           title='Welcome to Mountains Resort'
           subTitle="Where Luxury Meets Nature's Majesty"
           content=' At Mountains Resort, we invite you to escape the ordinary and embrace the extraordinary. Nestled in the heart of the Blue Mountains, our haven of luxury and natural beauty awaits your discovery. Whether you seek adventure or serenity, culinary delights or moments of quiet reflection, your mountain adventure begins here. Welcome to a world of wonder, where every day is a new chapter in your mountain story.'
-        /> */}
-        <ReviewCard
-          pageType={PageType.LANDING}
-          title='Heavenly Culinary Delights'
-          star={0}
-          content='As a self-proclaimed food enthusiast, I was blown away by the culinary offerings at Mountains Resort. Every meal was a celebration of flavors, showcasing the best of Australian ingredients. The chef-hatted restaurant lived up to its reputation, offering a dining experience that was a true highlight of our stay. This resort is a haven for food lovers!'
-          reviewer='Mark & Emily'
         />
       </div>
 

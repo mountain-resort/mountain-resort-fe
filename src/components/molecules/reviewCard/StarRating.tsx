@@ -1,19 +1,26 @@
-import StarIcon from '@/components/atoms/StarIcon';
+import Image from 'next/image';
+import assets from '@/variables/images';
 
 interface StarRatingProps {
   starNumber?: number;
 }
 
 const StarRating = ({ starNumber = 0 }: StarRatingProps) => {
-  const getStars = (rating: number) => {
-    const length = Math.max(1, Math.min(5, Math.floor(rating)));
-    console.log(length);
-    return Array.from({ length: length }, (_, i) => (
-      <StarIcon key={`full-${i}`} />
-    ));
-  };
+  const length = Math.max(1, Math.min(5, Math.floor(starNumber)));
 
-  return <div className='flex'>{getStars(starNumber)}</div>;
+  return (
+    <div className='flex'>
+      {Array.from({ length }, (_, i) => (
+        <Image
+          key={`full-${i}`}
+          src={assets.icons.reviewStar}
+          alt='star'
+          width={20}
+          height={20}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default StarRating;
