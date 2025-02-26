@@ -23,7 +23,10 @@ const assets = {
     "night": "/icons/ic_night.svg",
     "people": "/icons/ic_people.svg",
     "phone": "/icons/ic_phone.svg",
+    "plus": "/icons/ic_plus.svg",
     "profile": "/icons/ic_profile.svg",
+    "search": "/icons/ic_search.svg",
+    "rightArrow": "/icons/ic_right_arrow.svg",
     "sleep": "/icons/ic_sleep.svg"
   },
   "images": {
