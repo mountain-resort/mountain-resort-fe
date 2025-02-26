@@ -9,7 +9,7 @@ const TextBox = ({
   text,
   size = 'text-md',
   weight = 'font-medium',
-  otherStyle,
+  otherStyle = '',
 }: TextBoxType) => {
   return <div className={`${size} ${weight} ${otherStyle}`}>{text}</div>;
 };

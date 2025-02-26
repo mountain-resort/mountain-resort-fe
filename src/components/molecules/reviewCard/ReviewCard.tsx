@@ -1,29 +1,56 @@
 import TextBox from '@/components/atoms/TextBox';
 import React from 'react';
-
 import StarRating from './StarRating';
 
+export enum PageType {
+  LANDING = 'landing',
+  DETAIL = 'detail',
+}
+
 interface DescriptionType {
-  pageType: 'landing' | 'detail';
+  pageType: PageType;
   title: string;
   star: number;
   content: string;
+  writer: string;
 }
 
-const ReviewCard = ({ pageType, title, star, content }: DescriptionType) => {
+const ReviewCard = ({
+  pageType,
+  title,
+  star,
+  content,
+  writer,
+}: DescriptionType) => {
   return (
-    <div className='flex justify-center items-center w-full h-full'>
+    <div className='w-full h-full'>
       <div
-        className={`p-4 rounded-lg ${
-          pageType === 'landing' ? 'bg-secondary-slate_gray' : 'bg-gray-100'
+        className={` ${
+          pageType === 'landing'
+            ? 'bg-secondary-slate_gray'
+            : 'bg-primary-black rounded-md'
         }`}
       >
-        <div className='px-4 py-10 flex flex-col gap-10 items-center text-center'>
-          {title && <TextBox text={title} />}
+        <div className='px-8 py-6 flex flex-col gap-6 items-center text-center font-Lara'>
+          {title && (
+            <TextBox text={`"${title}"`} size='mobile:text-2xs pc:text-sm' />
+          )}
           {star && <StarRating starNumber={star} />}
-          <div className='flex flex-col gap-[17px] font-sans'>
-            {content && <TextBox text={content} size='text-2xs' />}
-          </div>
+          {content && (
+            <TextBox
+              text={`"${content}"`}
+              size='mobile:text-3xs pc:text-sm'
+              otherStyle='font-sans'
+            />
+          )}
+          {writer && (
+            <TextBox
+              text={`by ${writer}`}
+              size='mobile:text-xs pc:text-sm'
+              weight='font-bold'
+              otherStyle='font-sans'
+            />
+          )}
         </div>
       </div>
     </div>
