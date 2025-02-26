@@ -25,10 +25,10 @@ const ReviewCard = ({
   return (
     <div className='w-full h-full'>
       <div
-        className={` ${
+        className={`rounded-md ${
           pageType === 'landing'
-            ? 'bg-secondary-slate_gray'
-            : 'bg-primary-black rounded-md'
+            ? 'bg-white bg-opacity-10 '
+            : 'bg-primary-black'
         }`}
       >
         <div className='px-8 py-6 flex flex-col gap-6 items-center text-center font-Lara'>
