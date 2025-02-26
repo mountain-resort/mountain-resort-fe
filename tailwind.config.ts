@@ -13,6 +13,7 @@ export default {
           white: '#FBFBF8',
           black: '#0E131E',
           gold: '#EEB609',
+          gray: '#767676',
         },
         secondary: {
           dark_grey: '#3F4547',
@@ -32,6 +33,7 @@ export default {
         sm: ['18px', { lineHeight: '23px' }],
         xs: ['16px', { lineHeight: '20px' }],
         '2xs': ['14px', { lineHeight: '19.1px' }],
+        '3xs': ['12px', { lineHeight: '16px' }],
       },
       fontWeight: {
         bold: '700',
