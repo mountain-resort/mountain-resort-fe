@@ -26,6 +26,12 @@
     "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "warn",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ],
 
     // ✅ TypeScript 관련 규칙
     "@typescript-eslint/explicit-module-boundary-types": "off",
