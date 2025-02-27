@@ -1,4 +1,4 @@
-import TextBox from '@/components/atom/TextBox';
+import TextBox from '@/components/atoms/TextBox';
 import assets from '@/variables/images';
 import { cva } from 'class-variance-authority';
 import Image from 'next/image';
