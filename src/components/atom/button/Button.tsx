@@ -54,30 +54,23 @@ export default function Button({
   className,
   ...props
 }: ButtonProps) {
+  const icon = iconSrc ? (
+    <Image
+      src={iconSrc}
+      alt='icon'
+      width={iconSize}
+      height={iconSize}
+      className={iconPosition === 'left' ? 'mr-2' : 'ml-3'}
+    />
+  ) : null;
   return (
     <button
       className={cn(buttonVariants({ variant, rounded }), className)}
       {...props}
     >
-      {iconSrc && iconPosition === 'left' && (
-        <Image
-          src={iconSrc}
-          alt='icon'
-          width={iconSize}
-          height={iconSize}
-          className='mr-2'
-        />
-      )}
+      {iconPosition === 'left' && icon}
       {children}
-      {iconSrc && iconPosition === 'right' && (
-        <Image
-          src={iconSrc}
-          alt='icon'
-          width={iconSize}
-          height={iconSize}
-          className='ml-3'
-        />
-      )}
+      {iconPosition === 'right' && icon}
     </button>
   );
 }
