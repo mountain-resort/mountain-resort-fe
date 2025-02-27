@@ -18,6 +18,8 @@ export default {
         secondary: {
           dark_grey: '#3F4547',
           light_grey: '#525252',
+          cyan: '#11CFCF',
+          red: '#CD3A3A',
           slate_gray: '#4E525A',
         },
       },
