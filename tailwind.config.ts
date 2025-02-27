@@ -20,6 +20,7 @@ export default {
           light_grey: '#525252',
           cyan: '#11CFCF',
           red: '#CD3A3A',
+          slate_gray: '#4E525A',
         },
       },
       fontFamily: {
