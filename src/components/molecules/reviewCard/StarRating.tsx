@@ -12,7 +12,7 @@ const StarRating = ({ starNumber = 0 }: StarRatingProps) => {
     <div className='flex'>
       {Array.from({ length }, (_, i) => (
         <Image
-          key={`full-${i}`}
+          key={`${i}`}
           src={assets.icons.reviewStar}
           alt='star'
           width={20}
