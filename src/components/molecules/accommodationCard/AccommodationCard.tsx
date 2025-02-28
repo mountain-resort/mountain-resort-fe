@@ -46,7 +46,6 @@ const AccommodationCard = ({
             text={name}
             weight='font-semibold'
             size='text-base pc:text-lg'
-            otherStyle='font-lora'
           />
 
           <div className={styles.separatorLine}></div>
