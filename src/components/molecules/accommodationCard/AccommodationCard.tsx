@@ -11,19 +11,19 @@ interface AccommodationCardProps {
 }
 
 const styles = {
-  card: cva('w-full bg-white overflow-hidden h-[360px] md:h-[501px]'),
-  imageWrapper: cva('relative min-h-48 md:min-h-60'),
-  content: cva('font-sans px-6 py-4 md:px-8 md:py-6'),
+  card: cva('w-full bg-white overflow-hidden h-[360px] pc:h-[501px]'),
+  imageWrapper: cva('relative min-h-48 pc:min-h-60'),
+  content: cva('font-sans px-6 py-4 pc:px-8 pc:py-6'),
   textContainer: cva('flex flex-col items-center text-center gap-6'),
   buttonContainer: cva(
-    'flex justify-center items-center w-full space-x-4 md:space-x-7 mt-5 md:mt-6',
+    'flex justify-center items-center w-full space-x-4 pc:space-x-7 mt-5 pc:mt-6',
   ),
   separatorLine: cva(
-    'border-t-2 border-primary-gold border-solid w-[51px] hidden md:block',
+    'border-t-2 border-primary-gold border-solid w-[51px] hidden pc:block',
   ),
 };
 
-const buttonStyles = cva('h-[35px] md:h-[43px] text-[14px]');
+const buttonStyles = cva('h-[35px] pc:h-[43px] text-[14px]');
 
 const AccommodationCard = ({
   name,
@@ -49,7 +49,7 @@ const AccommodationCard = ({
           <TextBox
             text={name}
             weight='font-semibold'
-            size='text-base md:text-lg'
+            size='text-base pc:text-lg'
             otherStyle='font-lora'
           />
 
@@ -58,8 +58,8 @@ const AccommodationCard = ({
           {description && (
             <TextBox
               text={description}
-              size='text-xs md:text-sm'
-              otherStyle='text-primary-gray line-clamp-2 md:line-clamp-none'
+              size='text-xs pc:text-sm'
+              otherStyle='text-primary-gray line-clamp-2 pc:line-clamp-none'
             />
           )}
         </div>
@@ -70,7 +70,7 @@ const AccommodationCard = ({
           </Button>
           <Button
             variant='primary'
-            className={`${buttonStyles()} hidden md:flex`}
+            className={`${buttonStyles()} hidden pc:flex`}
           >
             CHECK RATE
           </Button>
