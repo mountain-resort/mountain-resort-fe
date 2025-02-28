@@ -42,9 +42,9 @@ const assets = {
     "accommodationExploreAccommodationSliderFamilyFriendlyCabinSlider01": "/images/img_accommodation_Explore_accommodation_Slider_family_friendly_cabin_slider_01.jpeg",
     "accommodationExploreAccommodationSliderLuxuryVillasSlider01": "/images/img_accommodation_Explore_accommodation_Slider_luxury_villas_slider_01.jpeg",
     "accommodationExploreAccommodationSliderMountainViewChaletsSlider01": "/images/img_accommodation_Explore_accommodation_Slider_mountain_view_chalets_slider_01.jpeg",
-    "accommodationMountain-suitesSlider01": "/images/img_accommodation_Mountain-Suites_slider_01.jpeg",
-    "accommodationMountain-suitesSlider02": "/images/img_accommodation_Mountain-Suites_slider_02.jpeg",
-    "accommodationMountain-suitesSlider03": "/images/img_accommodation_Mountain-Suites_slider_03.jpeg",
+    "accommodationMountainSuitesSlider01": "/images/img_accommodation_mountain_suites_slider_01.jpeg",
+    "accommodationMountainSuitesSlider02": "/images/img_accommodation_mountain_suites_slider_02.jpeg",
+    "accommodationMountainSuitesSlider03": "/images/img_accommodation_mountain_suites_slider_03.jpeg",
     "accommodationFamilyFriendlyCabinSlider01": "/images/img_accommodation_family_friendly_cabin_slider_01.jpeg",
     "accommodationFamilyFriendlyCabinSlider02": "/images/img_accommodation_family_friendly_cabin_slider_02.jpeg",
     "accommodationFamilyFriendlyCabinSlider03": "/images/img_accommodation_family_friendly_cabin_slider_03.jpeg",
@@ -128,3 +128,4 @@ const assets = {
   }
 };
 export default assets;
+
