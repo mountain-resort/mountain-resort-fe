@@ -45,7 +45,7 @@ export default {
       },
       screens: {
         mobile: '375px',
-        pc: '1440px',
+        pc: '1200px',
       },
     },
   },
