@@ -36,17 +36,17 @@ const BookingCard = ({
         />
 
         <div className='flex justify-between w-full px-4 mt-6 pc:mt-[34px] h-[63px] pc:h-[60px]'>
-          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm'>
+          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm gap-[6px]'>
             <span className='font-semibold'>Occupancy:</span>
             <p>{occupancy.join(', ')}</p>
           </div>
 
-          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm'>
+          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm gap-[6px]'>
             <span className='font-semibold'>Size:</span>
             <p>{size.join(', ')}</p>
           </div>
 
-          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm'>
+          <div className='flex flex-col text-left text-[clamp(11px,3vw,16px)] pc:text-sm gap-[6px]'>
             <span className='font-semibold'>Bedding:</span>
             {bedding.map(([bedType, count], index) => (
               <p key={`${bedType}-${count}-${index}`}>
