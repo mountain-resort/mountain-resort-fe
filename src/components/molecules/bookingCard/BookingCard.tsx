@@ -29,7 +29,7 @@ const BookingCard = ({
         <Image src={imageSrc} alt={name} fill className='object-cover' />
       </div>
 
-      <div className='flex flex-col w-full px-4 pt-6 pb-4 pc:px-8 pc:py-6 pc:w-1/2 h-[300px] pc:h-auto'>
+      <div className='flex flex-col w-full px-4 pt-6 pb-4 pc:px-8 pc:py-6 pc:w-1/2 min-h-[255px] pc:h-auto'>
         <TextBox
           text={name}
           otherStyle='font-semibold border-b border-gray-400 pb-2 underline pl-[12px] text-[17px] pc:text-[22px] text-center pc:text-left'
