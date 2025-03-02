@@ -24,12 +24,12 @@ const BookingCard = ({
     images[0] ?? assets.images.accommodation01FamilyFriendlyCabin;
 
   return (
-    <div className='w-full bg-white h-auto flex flex-col pc:flex-row border border-black border-solid'>
-      <div className='relative w-full h-[189px] pc:w-1/2 pc:min-h-[375px] pc:flex-shrink-0 border-b-2 border-gray-300 pc:border-b-0'>
+    <div className='w-full bg-white h-auto flex flex-col pc:flex-row border border-black border-solid pc:h-[375px]'>
+      <div className='relative w-full h-[189px] pc:w-1/2 pc:h-[375px] pc:flex-shrink-0 border-b-2 border-gray-300 pc:border-b-0'>
         <Image src={imageSrc} alt={name} fill className='object-cover' />
       </div>
 
-      <div className='flex flex-col w-full px-4 pt-6 pb-4 pc:px-8 pc:py-6 pc:w-1/2 flex-1'>
+      <div className='flex flex-col w-full px-4 pt-6 pb-4 pc:px-8 pc:py-6 pc:w-1/2 h-[300px] pc:h-auto'>
         <TextBox
           text={name}
           otherStyle='font-semibold border-b border-gray-400 pb-2 underline pl-[12px] text-[17px] pc:text-[22px] text-center pc:text-left'
