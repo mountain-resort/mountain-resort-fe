@@ -1,6 +1,7 @@
-import TextBox from '@/components/atoms/TextBox';
-import Button from '@/components/atoms/button/Button';
 import Image from 'next/image';
+
+import Button from '@/components/atoms/button/Button';
+import TextBox from '@/components/atoms/TextBox';
 import assets from '@/variables/images';
 
 interface AccommodationCardProps {

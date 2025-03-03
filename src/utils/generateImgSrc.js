@@ -1,11 +1,12 @@
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
+
 const __dirname = path.join();
 
 const assets = {};
 
-const assetsPath = path.join(__dirname, "public");
-const outputPath = path.join(__dirname, "src/variables/images.js");
+const assetsPath = path.join(__dirname, 'public');
+const outputPath = path.join(__dirname, 'src/variables/images.js');
 
 const categories = fs.readdirSync(assetsPath).filter((item) => {
   const category = path.join(assetsPath, item);
@@ -13,11 +14,11 @@ const categories = fs.readdirSync(assetsPath).filter((item) => {
 });
 
 const toCamelCase = (fileName) => {
-  if (fileName === ".DS_Store") {
+  if (fileName === '.DS_Store') {
     return null;
   }
   const name = fileName
-    .split("_")
+    .split('_')
     .splice(1)
     .map((word, i) => {
       if (i === 0) {
@@ -25,7 +26,7 @@ const toCamelCase = (fileName) => {
       }
       return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
     })
-    .join("");
+    .join('');
 
   return name;
 };
@@ -50,8 +51,8 @@ categories.forEach((category) => {
 const fileContent = `const assets = ${JSON.stringify(
   assets,
   null,
-  2
+  2,
 )};\nexport default assets;`;
 
 // 파일 작성
-fs.writeFileSync(outputPath, fileContent, "utf-8");
+fs.writeFileSync(outputPath, fileContent, 'utf-8');

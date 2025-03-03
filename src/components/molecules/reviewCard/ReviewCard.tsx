@@ -1,5 +1,7 @@
-import TextBox from '@/components/atoms/TextBox';
 import React from 'react';
+
+import TextBox from '@/components/atoms/TextBox';
+
 import StarRating from './StarRating';
 
 export enum Type {
