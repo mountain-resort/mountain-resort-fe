@@ -4,21 +4,21 @@
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaFeatures": {
-      "jsx": true
-    }
+      "jsx": true,
+    },
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "plugin:import/recommended"
+    "plugin:import/recommended",
   ],
   "plugins": ["react", "@typescript-eslint", "import", "react-hooks"],
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
   },
   "rules": {
     // ✅ React 관련 규칙
@@ -29,8 +29,8 @@
     "react-hooks/exhaustive-deps": [
       "warn",
       {
-        "additionalHooks": "useRecoilCallback"
-      }
+        "additionalHooks": "useRecoilCallback",
+      },
     ],
 
     // ✅ TypeScript 관련 규칙
@@ -38,7 +38,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { "argsIgnorePattern": "^_" }
+      { "argsIgnorePattern": "^_" },
     ],
 
     // ✅ Import 관련 규칙 (정렬 포함)
@@ -50,11 +50,11 @@
           "external",
           "internal",
           ["parent", "sibling"],
-          "index"
+          "index",
         ],
         "newlines-between": "always",
-        "alphabetize": { "order": "asc", "caseInsensitive": true }
-      }
+        "alphabetize": { "order": "asc", "caseInsensitive": true },
+      },
     ],
     "import/newline-after-import": ["error", { "count": 1 }],
     "import/no-unresolved": "off",
@@ -74,12 +74,12 @@
     "react-hooks/rules-of-hooks": "error",
 
     // ✅ 화살표 함수 규칙
-    "arrow-parens": ["error", "always"]
+    "arrow-parens": ["error", "always"],
   },
   "settings": {
     "react": {
-      "version": "detect"
-    }
+      "version": "detect",
+    },
   },
-  "ignorePatterns": ["dist/", "build/", "node_modules/"]
+  "ignorePatterns": ["dist/", "build/", "node_modules/", "src/stories/"],
 }
