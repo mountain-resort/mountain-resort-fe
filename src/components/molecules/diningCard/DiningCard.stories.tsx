@@ -25,7 +25,7 @@ Default.args = {
   title: 'Al Fresco Terrace',
   subTitle: 'Australian Fusion',
   content:
-  'Dine under the open sky on our al fresco terrace, surrounded by the sights and sounds of nature. This is the perfect setting for a leisurely breakfast, a romantic dinner, or a casual lunch with friends and family.',
+    'Dine under the open sky on our al fresco terrace, surrounded by the sights and sounds of nature. This is the perfect setting for a leisurely breakfast, a romantic dinner, or a casual lunch with friends and family.',
   contact: '+ 61 (2) 1234-5678',
 };
 

@@ -81,5 +81,11 @@
       "version": "detect",
     },
   },
-  "ignorePatterns": ["dist/", "build/", "node_modules/", "src/stories/"],
+  "ignorePatterns": [
+    "dist/",
+    "build/",
+    "node_modules/",
+    "src/stories/",
+    ".eslintrc",
+  ],
 }

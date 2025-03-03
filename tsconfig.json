@@ -30,5 +30,5 @@
     "src/utils/generateImgSrc.js",
     "eslint.config.mjs"
   ],
-  "exclude": ["node_modules", ".storybook/**/*"]
+  "exclude": ["node_modules", ".storybook/**/*", ".eslintrc"]
 }

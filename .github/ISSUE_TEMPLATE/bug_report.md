@@ -1,21 +1,21 @@
 ---
-name: "bug report template"
-about: "찾은 이슈나 버그 신고"
-title: "[BUG] 문제 요약"
-labels: ["🐛bug", "🧚🏻‍♀️도움 요청"]
-assignees: ""
+name: 'bug report template'
+about: '찾은 이슈나 버그 신고'
+title: '[BUG] 문제 요약'
+labels: ['🐛bug', '🧚🏻‍♀️도움 요청']
+assignees: ''
 ---
 
-
 #### 버그 혹은 이슈 설명
+
 <!-- 어떤 버그가 발생했는지 상세히 설명해주세요 -->
 
-
 #### 스크린샷
+
 <!-- 가능하다면 스크린샷을 첨부해주세요 -->
+
 ![image](이미지url)
 
-
-
 #### 추가 코멘트
+
 <!-- 추가로 공유할 내용이 있다면 작성해주세요 -->

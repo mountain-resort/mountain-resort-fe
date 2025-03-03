@@ -87,6 +87,7 @@ const eslintRules = [
       'no-trailing-spaces': 'error', // 불필요한 공백 제거
       'no-multi-spaces': 'error', // 여러 개의 공백 금지
       indent: 'off', // Prettier와 충돌 방지를 위해 OFF
+      'comma-dangle': ['error', 'always-multiline'], // ✅ 후행 쉼표 허용
 
       // ✅ 화살표 함수 규칙
       'arrow-parens': ['error', 'always'], // 화살표 함수 괄호 필수
@@ -101,6 +102,7 @@ const eslintRules = [
       'src/fonts',
       'src/stories/Page.tsx',
       'src/stories',
+      '.eslintrc',
     ],
   },
 ];
