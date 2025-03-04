@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import assets from '@/variables/images';
 
 interface StarRatingProps {

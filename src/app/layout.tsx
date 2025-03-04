@@ -1,5 +1,8 @@
+import React from 'react';
 import type { Metadata } from 'next';
+
 import { FontClassNames } from '@/fonts/font';
+
 import './globals.css';
 
 export const metadata: Metadata = {

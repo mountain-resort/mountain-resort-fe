@@ -1,8 +1,8 @@
-import TextBox from '@/components/atoms/TextBox';
-import assets from '@/variables/images';
 import { cva } from 'class-variance-authority';
 import Image from 'next/image';
-import React from 'react';
+
+import TextBox from '@/components/atoms/TextBox';
+import assets from '@/variables/images';
 
 interface DiningCardProps {
   type: 'on-site' | 'off-site';

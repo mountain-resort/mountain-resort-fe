@@ -1,5 +1,6 @@
-import TextBox from '@/components/atoms/TextBox';
 import React from 'react';
+
+import TextBox from '@/components/atoms/TextBox';
 
 interface DescriptionType {
   title?: string;
