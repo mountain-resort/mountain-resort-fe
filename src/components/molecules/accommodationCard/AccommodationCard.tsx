@@ -11,11 +11,11 @@ interface AccommodationCardProps {
 
 const styles = {
   card: 'w-full bg-white overflow-hidden h-[360px] pc:h-[501px]',
-  imageWrapper: 'relative min-h-48 pc:min-h-60',
+  imageWrapper: 'relative min-h-[190px] pc:min-h-[237px]',
   content: 'font-sans px-6 py-4 pc:px-8 pc:py-6',
   textContainer: 'flex flex-col items-center text-center gap-6',
   buttonContainer:
-    'flex justify-center items-center w-full space-x-4 pc:space-x-7 mt-5 pc:mt-6',
+    'flex justify-center items-center w-full space-x-4 pc:space-x-7 mt-[24px] pc:mt-[20px]',
   separatorLine:
     'border-t-2 border-primary-gold border-solid w-[51px] hidden pc:block',
   buttonStyles: 'h-[35px] pc:h-[43px] text-[14px]',
@@ -45,7 +45,7 @@ const AccommodationCard = ({
           <TextBox
             text={name}
             weight='font-semibold'
-            size='text-base pc:text-lg'
+            size='text-[14px] pc:text-[20px]'
           />
 
           <div className={styles.separatorLine}></div>
@@ -76,3 +76,4 @@ const AccommodationCard = ({
 };
 
 export default AccommodationCard;
+
